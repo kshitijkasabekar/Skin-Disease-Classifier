@@ -39,8 +39,8 @@ if uploaded_file is not None:
         class_labels = ['Acne and Rosacea', 'Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions', 'Eczema', 'Nail Fungus and other nail disorders']
 
         # Display the prediction result
-        st.write(f"Prediction: {class_labels[predicted_class_index]}")
-        st.write(f"Confidence: {prediction[0][predicted_class_index]:.2%}")
-
-    #Hello
-
+        # st.markdown(f"**Prediction:** **{class_labels[predicted_class_index]}**")
+        st.markdown(f"<p style='font-size: 24px'><strong>Prediction: {class_labels[predicted_class_index]}</strong></p>", unsafe_allow_html=True)
+        # st.markdown(f"**Confidence:** {prediction[0][predicted_class_index]:.2%}")
+#
+#
