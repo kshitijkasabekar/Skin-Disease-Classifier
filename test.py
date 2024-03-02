@@ -19,7 +19,7 @@ def preprocess_image(image_path):
 st.title("Skin Disease Classifier")
 
 # Upload an image through the Streamlit interface
-uploaded_file = st.file_uploader("Choose an image...", type="jpg, jpeg, png")
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 # Display the uploaded image
 if uploaded_file is not None:
