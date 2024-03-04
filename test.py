@@ -28,7 +28,7 @@ if uploaded_file is not None:
 
     # Button to trigger classification
     if st.button("Classify"):
-        st.write("Classifying...")
+        # st.write("Classifying...")
 
         # Make predictions
         img_array = preprocess_image(uploaded_file)
